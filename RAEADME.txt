@@ -1,0 +1,35 @@
+Basics Web applicatioon structure :-
+File included :-
+html ----> index.html
+css -----> style.css
+js ------> script.js 
+
+URL (Uniform resource locator)
+    https://subdomain.domain.TLD/direction (direct me on this section/page/path)
+    https://education.webdev.edu/fullstack 
+    https://shinepersona.com/services/ (live example) (My website)
+
+    https :- Protcol
+    webdev :- server/domain name
+    education :- Sub-domain
+    .edu :- TLD (Top level domain)
+    fullstack :- page
+
+    Protcol :- A set of rules/instruction
+        -> http :- hyper text tranfer protcol 
+        -> https :- hyper text tranfer protcol secure
+        -> ftp :- file tranfer protcol
+        -> smtp :- simple mail tranfer protcol
+        Based on connection
+        -> tcp :- transmission control protcol (proper connection )
+        -> udp :- userdatagram protcol (not stable)
+        -> ip :- intenet protcol
+
+        * http ------> by help of ssl (Secure socket layer) certification ------> https
+
+    TLD :-
+        -> .com : commercial
+        -> .edu : education
+        -> .in : india
+        -> .uk : united kingdom 
+        -> .
