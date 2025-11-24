@@ -6,8 +6,9 @@
     <title>Gagan's resume</title>
 </head>
 <body>
+
 <header>
-    <table border = "3" cellpadding = "69" cellspacing = "10" align="center">
+    <table border = "3" cellpadding = "65" cellspacing = "10" align="center">
         <tr>
             <td><a href="https://github.com/GagandeepSingh-codes"><img src="images/Gagan_profile_pic.jpg" alt = "Gagan's profile picture" 
                 width="300"></a>
@@ -23,8 +24,22 @@
     </table>
     <hr>
 </header>
+
+<nav>
+    <h2><mark>Navigation Menu :- </mark></h2>
+    <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work_experience">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+    </ul>
+    <hr>
+</nav>
+
 <main>
-    <table border = "2" >
+    <section id = "education">
+        <table border = "2" >
         <tr><h2><mark><u>Education :</u></h2></tr>
         <tr>
             <td>Course</td>
@@ -52,7 +67,9 @@
         </tr>
     </table>
     <hr>
-    <h2><mark><u>Work experience:</u></h2>
+    </section>
+    <section id = "work_experience">
+        <h2><mark><u>Work experience:</u></h2>
     <p>Open source contributor in <strong><i>@Code social'25</strong></i> and <i><strong>@Girl script summer of code'25</i></strong></p>
     <ul>
         <li>Contributed on a project which was based on <b>car transportion  business</b> , fixed issues and typo (Documentation).</li>
@@ -60,24 +77,33 @@
         <li>Got to learn about <b>github</b> and used to make useful <b>contribution</b> while learning side by side.</li>
     </ul>
     <hr>
-    <h2><mark><u>Webdev-projects</u></mark></h2>
+    </section>
+    <section id = "projects">
+        <h2><mark><u>Webdev-projects</u></mark></h2>
     <ul>
-        <li><a href="https://github.com/GagandeepSingh-codes/Webdev-projects">Project 1 :- Wed-dev-Projects</a></li>
+        <article id = "project1">
+            <li><a href="https://github.com/GagandeepSingh-codes/Webdev-projects">Project 1 :- Wed-dev-Projects</a></li>
             <ul>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id possimus veniam dolores, rerum obcaecati quis nesciunt illo nihil sed esse minus explicabo, necessitatibus culpa quasi aspernatur suscipit magni fuga. Laborum quia fuga impedit nemo rerum suscipit corrupti cum odio culpa amet ipsa aliquam possimus eius laboriosam vitae quam, expedita odit. Obcaecati iusto nesciunt deserunt aperiam modi odit officiis dolorem, dignissimos molestiae, laboriosam at repellendus nemo nihil, facere placeat tempore.</li>
-            </ul>
+            </ul><br>
+        </article>
+        
+        <article id = "project2">
         <li><a href="https://github.com/GagandeepSingh-codes/car-transport-service">Project 2 :- Car-transport-service</a></li>
                 <ul>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id possimus veniam dolores, rerum obcaecati quis nesciunt illo nihil sed esse minus explicabo, necessitatibus culpa quasi aspernatur suscipit magni fuga. Laborum quia fuga impedit nemo rerum suscipit corrupti cum odio culpa amet ipsa aliquam possimus eius laboriosam vitae quam, expedita odit. Obcaecati iusto nesciunt deserunt aperiam modi odit officiis dolorem, dignissimos molestiae, laboriosam at repellendus nemo nihil, facere placeat tempore.</li>
             </ul>
+        </article>
     </ul>
     <hr>
-    <h2><mark><u>Skills:</mark></u></h2>
+    </section>
+    <section id = "skills">
+        <h2><mark><u>Skills:</mark></u></h2>
     <p>HTML, CSS, JavaScript , Git , Github , python , C++ </p>
     <hr>
-</main>
-<footer>
-    <h2 id = contactme><mark>Contact me:</mark></h2>
+    </section>
+    <section id = "contactme">
+        <h2 id = contactme><mark>Contact me:</mark></h2>
     <!-- a = anchor tag -->
     <!-- href = hyper reference -->
     <ul style="list-style-type:square">
@@ -88,25 +114,28 @@
     </ul>
     <hr>
 </p>
-</footer>
-<p><h2><mark>Contact me form 📜💘</mark></h2></p>
-<form action="resume.html">
-       <label for="fname">Enter your first name :-</label> <input type="text" name="" id="fname" minlength="3" maxlength="15" placeholder="Your first name" required value="Bhupinder"> 
-       
-       <label for="mname">Enter your middle name :- </label><input type="text" name="" id="mname" minlength="3" maxlength="10" placeholder="Your middle name" required disabled> 
-       
-       <label for="lname">Enter your Last name :- </label><input type="text" name="" id="lname" minlength="3" maxlength="10" placeholder="Your middle name" required value="Jogi"> 
-       <br> <br>
-       <label for="no">Enter your mobile number :- </label><input type="number" name="" id="no" minlength="3" maxlength="10" placeholder="Your mobile number" required value="9843644211"> 
-       <br> <br>
-       <label for="age">Enter your age :- </label><input type="number" name="" id="age" minlength="3" maxlength="10" placeholder="Your age" required value="69"> 
-       <br> <br>
-       <label for="email">Enter your email :- </label><input type="email" name="" id="email" minlength="3" maxlength="10" placeholder="Your email" required value="Bhupinderjogi69@gmail.com"> 
-       <br> <br>
-       <label>Enter your date of joining :- </label><input type="date" name="" id="" minlength="3" maxlength="10" placeholder="Your date of joining" > 
-       <br> <br>
-       <label for="password">Enter your password :- </label><input type="password" name="" id="password" minlength="3" maxlength="15" placeholder="Your password" required value="696969"> 
-       <br> <br>
+    </section>
+</main>
+
+<footer>
+    <p><h2><mark>Contact me form 📜💘</mark></h2></p>
+    <form action="resume.html">
+        <label for="fname">Enter your first name :-</label> <input type="text" name="" id="fname" minlength="3" maxlength="15" placeholder="Your first name" required value="Bhupinder"> 
+        
+        <label for="mname">Enter your middle name :- </label><input type="text" name="" id="mname" minlength="3" maxlength="10" placeholder="Your middle name" required disabled> 
+        
+        <label for="lname">Enter your Last name :- </label><input type="text" name="" id="lname" minlength="3" maxlength="10" placeholder="Your middle name" required value="Jogi"> 
+        <br> <br>
+        <label for="no">Enter your mobile number :- </label><input type="number" name="" id="no" minlength="3" maxlength="10" placeholder="Your mobile number" required value="9843644211"> 
+        <br> <br>
+        <label for="age">Enter your age :- </label><input type="number" name="" id="age" minlength="3" maxlength="10" placeholder="Your age" required value="69"> 
+        <br> <br>
+        <label for="email">Enter your email :- </label><input type="email" name="" id="email" minlength="3" maxlength="10" placeholder="Your email" required value="Bhupinderjogi69@gmail.com"> 
+        <br> <br>
+        <label>Enter your date of joining :- </label><input type="date" name="" id="" minlength="3" maxlength="10" placeholder="Your date of joining" > 
+        <br> <br>
+        <label for="password">Enter your password :- </label><input type="password" name="" id="password" minlength="3" maxlength="15" placeholder="Your password" required value="696969"> 
+        <br> <br>
         <p>Are you :-</p>
         <input type="radio" name="what_is_your_existence" id ="Student" checked/><label for="Student">Student</label>
         <br> <br>
@@ -135,10 +164,13 @@
         <br> <br>
         <label for="feedback">Do take your precious time to enter your feedback :- </label>
         <!-- <input type="text" name="" id=""> -->
-         <textarea name="" id="feedback" rows="15" cols="100" placeholder="We would really appereciate your detailed feedback"></textarea>
-         <input type="reset" value="Reset Form">
-         <br><br>
-         <input type="submit" value="Submit your Form">
+        <textarea name="" id="feedback" rows="15" cols="100" placeholder="We would really appereciate your detailed feedback"></textarea>
+        <input type="reset" value="Reset Form">
+        <br><br>
+        <input type="submit" value="Submit your Form">
     </form>
+    <p align="center">© 2024 Gagandeep Singh. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
