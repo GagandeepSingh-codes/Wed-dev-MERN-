@@ -1,0 +1,22 @@
+h1{
+    color: brown;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+p{
+    color: brown; 
+    font-size: 20px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+button{
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: rgb(227, 49, 73);
+    color: white;
+    padding: 10px;
+}
