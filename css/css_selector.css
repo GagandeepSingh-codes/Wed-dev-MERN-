@@ -1,0 +1,109 @@
+/* Selector syntax in CSS */
+/* css_selector {
+    property : value;
+} 
+*/
+/* 1. Element Selector :- * { } */
+
+/* h1{
+    color : darkblue;
+    font-size : 30px;
+}
+
+h2{
+    color : firebrick;
+    font-size : 25px;
+}
+p{
+    color : rgb(242, 104, 104);
+    font-size : 15px;
+} */
+
+/* 2. Id Selector :- #id_name { } "Keep in mind that id should be unique" */
+/* #Hid{
+    background-color : lightgrey;
+    padding : 10px;
+    text-align : center;
+} */
+
+/* 3. Class Selector :- .class_name { } "Multiple elements can have same class name" */
+
+/* .head1{
+    color : brown ;
+    background-color: lightgray;
+    text-align : center;
+}
+
+.head2{
+    color : green ;
+    background-color: lightgray;
+    text-align : left;
+}
+
+.text{
+    background-color : lightgray;
+    font-family : Arial, sans-serif;
+} */
+
+/* 4. Group Selector :- selector1,selector2,selector3{ } " */
+
+h1 ,.head {
+    color : rgb(0, 109, 128);
+    text-align : center;
+    background-color : #f0f0f0;
+    padding : 10px;
+    margin : -10px;
+    font-family : Roboto;
+}
+
+h2 ,  .head2 , p {
+    font-family : Roboto;
+    color : rgb(128, 55, 0);
+    text-align : left;
+    background-color : #f0f0f0;
+    padding : 5px;
+    margin : 0px;
+}
+
+p{
+    font-family : 'Times New Roman', Times, serif;
+    background-color : #f0f0f0;
+    color : rgb(0, 51, 102);
+}
+
+/* Specificity / priority order
+ ID >> Class >> Element
+*/
+
+/* 5. Universal selector : *{ }  */
+
+/* *{
+    font-family : Roboto;
+    background-color : #f0f0f0;
+    margin : 10px;
+    padding : 5px;
+    text-align : center
+} */
+
+/* 6. Nested Selector :- parent child { }  */
+/* div span{
+    color : purple;
+    font-size : 20px;
+} */
+
+/* 7. Descendant Selector :- parent child { } */
+/* #Descendant_selector p{
+    color : orange;
+    font-size : 18px;   
+} */
+
+/* 8. Direct child selector :- child { } */
+/* #DirectChild_selector > p{
+    color : teal;
+    font-size : 18px;   
+} */
+
+p:hover{
+    color : rgb(255, 255, 255) ;
+    background-color : rgb(195, 125, 125);
+}
