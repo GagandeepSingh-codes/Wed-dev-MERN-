@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS </title>
+    <link rel="stylesheet" href="css_selector.css">
+    <link rel="shortcut icon" href="images/favicon.x-icon" type="image/x-icon" >
+</head>
+<body>
+    <!-- 
+    >> Types of CSS Selectors :-
+    1. Universal Selector :- * {  }
+    2. Type Selector :- element {  }
+    3. Class Selector :- .class_name {  }
+    4. ID Selector :- #id_name {  }
+    5. Attribute Selector :- [attribute = "value"] {  }
+    6. Grouping Selector :- selector1, selector2, selector3 {  }
+    7. Descendant Selector :- parent child {  }
+    8. Direct Child Selector :- child {  }
+    9. Nested Selector :- parent child {  }
+    -->
+    <header>
+        <h1 id = "Hid" class = "head1"><u>Selector in CSS</u></h1>
+        <hr>
+    </header>
+    <main>
+        <article id = "element_selector">
+            <h2 class = "head2"><u>Element selector</u></h2>
+            <p class = "text">
+                The element selector in CSS is used to select and style HTML elements based on their tag names. For example, to style all <code>&lt;p&gt;</code> elements in a document, 
+            </p>
+            <hr>
+        </article>
+
+        <article id = "id_selector">
+            <h2><u>Id selector</u></h2>
+            <p>
+                The ID selector in CSS is used to select and style a single HTML element based on its unique ID attribute. An ID should be unique within a document, meaning that no two elements should have the same ID value. To use the ID selector, you prefix the ID name with a hash symbol (#). For example, to style an element with the ID "header", you would use the following CSS:
+            </p>
+            <hr>
+        </article>
+
+        <article id = "class_selector">
+            <h2><u>Class selector</u></h2>
+            <p>
+                The class selector in CSS is used to select and style HTML elements based on their class attribute. Unlike IDs, multiple elements can share the same class name, allowing for more flexible styling. To use the class selector, you prefix the class name with a period (.). For example, to style all elements with the class "highlight", you would use the following CSS:
+            </p>
+            <hr>
+        </article> 
+
+        <article id = "nested_selector">
+            <h2><u>Nested selector</u></h2>
+            <p>
+                The nested selector in CSS allows you to target elements that are descendants of a specific parent element. This is useful for applying styles to elements based on their hierarchy within the HTML structure. To use a nested selector, you simply list the parent element followed by the child element, separated by a space. For example, to style all <code>&lt;span&gt;</code> elements that are inside <code>&lt;div&gt;</code> elements, you would use the following CSS:
+            </p>
+            <hr>
+        </article>
+
+        <article id = "Universal_selector">
+            <h2><u>Universal selector</u></h2>
+            <p>
+                The universal selector in CSS is represented by an asterisk (*) and is used to select all elements on a web page. It applies the specified styles to every element, regardless of its type, class, or ID. This selector is useful for applying global styles or resetting default styles across all elements. For example, to set a default font family and margin for all elements, you would use the following CSS:
+            </p>
+            <hr>
+        </article>
+
+        <article id = "Descendant_selector">
+            <h2><u>Descendant selector</u></h2>
+            <p>
+                The descendant selector in CSS is used to select elements that are descendants of a specified ancestor element. This means that the selected elements can be nested at any level within the ancestor element. To use the descendant selector, you simply list the ancestor element followed by the descendant element, separated by a space. For example, to style all <code>&lt;em&gt;</code> elements that are inside <code>&lt;section&gt;</code> elements, you would use the following CSS:
+            </p>
+            <hr>
+        </article>
+
+        <article id = "DirectChild_selector">
+            <h2><u>Direct Child selector</u></h2>
+            <p>
+                The direct child selector in CSS is used to select elements that are direct children of a specified parent element. This means that the selected elements must be immediate children, not nested further down the hierarchy. To use the direct child selector, you use the greater-than symbol (>) between the parent and child elements. For example, to style all <code>&lt;li&gt;</code> elements that are direct children of <code>&lt;ul&gt;</code> elements, you would use the following CSS:
+            </p>
+            <hr>
+        </article>
+
+        
+    </main>
+</body>
+</html>
