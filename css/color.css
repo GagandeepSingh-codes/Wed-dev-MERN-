@@ -1,0 +1,37 @@
+#header{
+    background-color: #606c38;
+    color: #fefae0;
+    padding: 25px;
+    font-size : 40px;
+    margin : -9px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+main{
+    margin-top: -15px;
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 0px;
+    font-size: 18px;
+}
+
+h2 {
+    color: #aa8246;
+    font-size: 28px;
+    
+}
+
+#color_property , #background_color_property{
+    padding: 10px;
+    margin: 16px;
+}
+
+#footer{
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* For colors combination u can use "coolors.co" */
