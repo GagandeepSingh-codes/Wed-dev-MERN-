@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Box model</h1>
+    </div>
+    <p>
+            The CSS Box Model is a fundamental concept in web development that describes how HTML elements are rendered and how their dimensions are calculated within a web page. It treats every HTML element as a rectangular box, composed of four distinct layers:
+        </p>
+        <ul class = "box-model-layers">
+            <li><strong>Content:</strong> This is the innermost layer where the actual content of the element (text, images, etc.) is displayed. The size of this area is determined by properties like width and height.</li>
+            <li><strong>Padding:</strong> This layer surrounds the content and provides space between the content and the border. Padding can be adjusted using CSS properties like padding-top, padding-right, padding-bottom, and padding-left.</li>
+            <li><strong>Border:</strong> The border wraps around the padding (if any) and content. It can be styled with various properties such as border-width, border-style, and border-color.</li>
+            <li><strong>Margin:</strong> This is the outermost layer that creates space between the element and its neighboring elements. Margins can be set using margin-top, margin-right, margin-bottom, and margin-left properties.</li>  
+        </ul>
+        <hr>
+        <p>
+            Understanding the box model is crucial for web developers as it affects layout, spacing, and overall design of web pages. By manipulating the properties of each layer, developers can control how elements are displayed and how they interact with each other on the page.
+        </p>
+        <ul>
+            <li><strong>Example:</strong> Consider a div element with the following CSS properties:
+                <ul>
+                    <li>width: 200px;</li>
+                    <li>height: 100px;</li>
+                    <li>padding: 10px;</li>
+                    <li>border: 5px solid black;</li>
+                    <li>margin: 20px;</li>
+                </ul>
+                The total width of the element would be calculated as follows:
+                <ul>
+                    <li>Total Width = width + (2 * padding) + (2 * border) + (2 * margin)</li>
+                    <li>Total Width = 200px + (2 * 10px) + (2 * 5px) + (2 * 20px) = 270px</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <div>
+            <h1>Standard Box Model vs. box-sizing: border-box;</h1>
+        </div>
+        <p>
+            By default, the CSS box model follows the standard box model, where the width and height properties only apply to the content area. However, using the CSS property <code>box-sizing: border-box;</code> changes this behavior. When applied, it makes the width and height properties include the padding and border, making it easier to manage element sizes without having to do additional calculations.
+        </p>
+        <h1>
+            Structure example
+        </h1>
+    <div>
+        
+    </div>
+</body>
+</html>
