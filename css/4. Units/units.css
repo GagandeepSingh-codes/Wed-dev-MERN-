@@ -1,0 +1,62 @@
+#header{
+    /* border: 5px solid  #fdf0d5; */
+    background-color: #003049;
+    color: #fdf0d5;
+    padding : .6cm;
+    font-size : 12mm;
+    margin : -9px;
+    text-align : center;
+    border-radius : 5px;
+    width : 100%;
+    /* We can also use "vw" and "vh" */
+}
+
+body{
+    margin-top : -15px;
+    /* background-color : #fdf0d5; */
+    color : #c1121f;
+    font-size : 18px;
+}
+
+h2 {
+    text-align : center;
+    border : 2px solid #780000;
+    padding: 10px;
+    width : 100%;
+    color : #780000;
+    background-color : #d8e2dc;
+    font-size : 2pc;
+}
+
+main{
+    padding: 1%;
+}
+
+
+#list1, #list2{
+    margin : .5rem;
+    padding : .5em;
+    font-size : 14pt;
+    width : 50%;
+}
+
+#list1{
+    background-color : #d8e2dc;
+    text-align: left;
+    border : 2px solid #780000;
+}
+#list2{
+    background-color : #d8e2dc;
+    text-align: left;
+    border : 2px solid #780000;
+}
+
+/* you can refer "zuga.net" for comparing different units */
+
+#footer{
+    background-color : #003049;
+    color : #fdf0d5;
+    padding : .3cm;
+    text-align : center;
+    width : 100%;
+}
