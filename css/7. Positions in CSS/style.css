@@ -27,6 +27,7 @@ body{
     height: 100px;
     background-color: #dd9638;
     color: azure;
+    z-index: 1;
 }
 
 /* It wont work , as default value position will be static */
@@ -59,8 +60,9 @@ body{
     color: azure;
     position : fixed ;
     right : 90px;
-    left : 340px;
+    left : 333px;
     bottom: 130px;
+    z-index: 1;
 }
 
 .stick{
