@@ -4,41 +4,91 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
 h2{
     text-align: center;
     font-size: 40px;
     padding : 10px 20px;
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-shadow: 10px 5px 15px rgb(255, 255, 255);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 15px rgb(196, 196, 196);
+    font-family: dodgerblue;
     padding-bottom: 20px;
 }
 
 .container{
     border: 2px solid black;
-    display : grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+    min-height: 100vh;
+    display : flex;
+    justify-content: space-evenly;
     align-items: center;
-    display: flex;
-    height: 90vh;
+    gap : 20px;
+    background : linear-gradient(to right, #081c15, #1b4332);
 }
 
-
-
 .left{
+    flex-basis: 30%;
+}
+
+.left h2{
+    color : #d8f3dc;
+}
+
+.left p{
+    color: #b7e4c7;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    line-height: 1.6;   
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    align-content: center;
 }
 
 .right{
-    background-image: url('image.jpg');
+    flex-basis: 50%;
+    display : grid;
+    gap : 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 120px;
+}
+
+.imgs{
+    /* border-radius: 50%; */
     background-size: cover;
     background-position: center;
+    display : flex;
+    justify-content: center;
+    text-shadow: 5px 3px 5px black;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #474545;
+    background-blend-mode: hard-light;
+}
+
+.imgs:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #7de8c8;
+    background-color: #999;
+    background-position: bottom;
+}
+
+.left:hover{
+    color : white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: #42a279 0 0 744px 15px;
+    border-radius: 20px;
+}
+
+#box1{
+    grid-row : span 2;
+}
+
+#box2{
+    grid-column : span 2;
 }
