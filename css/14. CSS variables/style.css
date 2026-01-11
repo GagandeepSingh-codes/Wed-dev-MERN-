@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: var(--main-color, rgb(239, 246, 165));
+    text-align: center;
+    color: rgb(255, 215, 142);
+    border: 2px solid black;
+    background-color: rgb(101, 71, 27);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h1:hover{
+    color: var(--main-color, rgb(239, 246, 165));
+    color: rgb(86, 58, 6);
+    border: 2px solid black;
+    background-color: rgb(255, 204, 128);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    color: var(--text-color, rgb(250, 237, 171));
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+p:hover{
+    color: var(--text-color, rgb(255, 248, 211));
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    /* padding: 10px 40px; */
+    background-color: rgb(155, 77, 25);
+    /* display: flex;
+    content: center;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    /* width: 70%; */
+    border: 2px solid;
+    margin-top: 30px;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgb(255, 204, 128);
+    border-radius: 8px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    gap: 23px;
+    --backg-color : rgb(97, 68, 26); /* CSS Variable Declaration */
+    /* Used to define background color , bcz it is used in the box and can be used further */
+}
+
+.box{
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--backg-color);
+}
+
+.box:hover{  
+    border: 5px solid;
+    padding: 15px;
+    background-color: rgb(73, 49, 4);
+    border-radius: 10px;
+}
+
+.container>.box>p{
+    color: rgb(237, 219, 188);
+    font-size: 17.5px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container>.box>h2{
+    color: rgb(245, 227, 195);
+    background-color: rgb(178, 85, 23);
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container>.box>h2:hover{
+    color: rgb(86, 58, 6);
+    border: 5px solid black;
+    background-color: rgb(226, 127, 61);
+    padding: 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
