@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(35, 54, 113);
+}
+
+/* @media (width <=500px){
+    body{
+        background-color: lightgreen;
+    } */
+
+@media(min-width:500px) and (max-width:900px){
+    body{
+        background-color: rgb(29, 102, 78);
+    }
+}
+
+@media (orientation: portrait){
+    body{
+        background-color: rgb(255, 94, 94);
+    }
+}
+
+h1{
+    text-align: center;
+    color: lightcyan;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    color: wheat;
+    padding: 20px 0px 30px 0px;
+}
+
+.box{
+    display:flex;
+    background-color: rgb(181, 95, 37);
+    border-radius: 10px;
+    width:500px;
+    height:200px;
+    align-items:center;
+    margin: auto;
+    text-align:center;
+    justify-content: center;
+    line-height: 100px;
+    font-size:20px;
+    color: wheat;
+    padding: 10px 10px;
+}
+
