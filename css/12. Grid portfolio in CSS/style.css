@@ -45,6 +45,7 @@ h2{
     align-items: center;
     margin-top: 10px;
     align-content: center;
+    padding: 20px 40px;
 }
 
 .right{
@@ -91,4 +92,23 @@ h2{
 
 #box2{
     grid-column : span 2;
+}
+
+@media (max-width:1024px){
+    .container{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    .right{
+        width: 90%;
+        margin: 20px 20px;
+    }
+    /* .left, .right{
+        flex-basis: 100%;
+    } */
+
+    .left{
+        width: 70%;
+    }
+
 }
