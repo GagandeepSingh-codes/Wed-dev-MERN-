@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color : rgb(8, 78, 78);
+    color: wheat;
+}
+
+h1 , h2{
+    padding: 20px;
+}
+
+p{
+    padding: 20px;
+    font-size: 17px;
+}
+
+.container{
+    border-radius: 50%;
+    border: 2px solid ;
+    width : 300px;
+    height : 300px;
+    background-color: rgb(28, 94, 122);
+    margin: 80px auto;;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    animation: orbit 3s infinite;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    /* border-radius: 40%; */
+    background-color: rgb(113, 231, 245);
+    transform: translateX(200);
+    animation-name: move-your-baddy;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    /* margin: 100px auto; */
+    /* animation: move-the-box 4s infinite; */
+    /* animation: move-your-baddy 4s infinite; */
+}
+
+
+/* @keyframes move-the-box{
+    0%{
+        transform: translateX(0px);
+        background-color: #0ff;
+        }
+        50%{
+            transform: translateX(200px);
+        background-color: #f0f;
+        }
+        100%{
+            transform: translateX(0px);
+            background-color: #0ff;
+            }
+            } */
+            
+            
+@keyframes move-your-baddy{
+    0%{
+        transform: translate(0 , 0);
+    }
+    25%{
+        border-radius: 50%;
+        transform: translate(300px, 0);
+        background-color:rgb(49, 169, 182);
+    }
+    50%{
+        background-color:rgb(35, 131, 142);
+        transform: translate(300px , 300px)
+    }
+    75%{
+        transform: translate(0 , 300px);
+        background-color:rgb(11, 78, 85);
+    }
+    100%{
+        transform: translate(0 , 0px);
+        background-color:rgb(11, 78, 85);   
+    }
+}
+
+
+@keyframes orbit{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    background-color: bisque;
+    border-radius: 50%;
+    animation: loading-animation ease-in infinite alternate-reverse;
+}
+
+.dot:nth-child(even){
+    animation-delay: 0.1s;
+}
+
+@keyframes loading-animation {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+    
+}
