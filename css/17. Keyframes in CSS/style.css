@@ -19,7 +19,7 @@ p{
 }
 
 .container{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 2px solid ;
     width : 300px;
     height : 300px;
@@ -103,6 +103,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
     gap : 10px
 }
 
@@ -111,7 +112,8 @@ p{
     height:10px;
     background-color: bisque;
     border-radius: 50%;
-    animation: loading-animation ease-in infinite alternate-reverse;
+    /* animation: loading-animation ease-in infinite alternate; */
+    animation: loading-animation infinite alternate;
 }
 
 .dot:nth-child(even){
