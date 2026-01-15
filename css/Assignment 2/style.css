@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    gap: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+h4{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color : rgb(1, 171, 227);
+    background-color: rgb(209, 237, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h4:hover{
+    background-color: rgb(63, 207, 255);
+    color: #fff;
+}
+
+img{
+    width : 80px;
+    height: auto;
+    margin-right: 40px;
+    /* margin-top : 20px; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    color : #6e6e6e;
+}
+
+a:hover{
+    color : rgb(1, 171, 227);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.nav_links{
+    display: flex;
+    gap: 40px;
+    padding : 0px 300px;
+}
+
+.nav_links a:hover{
+    padding: 10px;
+    box-shadow: #6e6e6e 0px 4px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.left{
+    flex: 1;
+    padding: 50px;
+    padding-top: 150px;
+    margin-left: 80px;
+    width : 30%;
+    height: 100vh;
+}
+
+.right{
+    width: 70%;
+    margin-right: 80px;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right>img{
+    width : 550px;
+    height : auto;
+}
+
+.left>p{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.left>button{
+    padding: 25px;
+    font-size: 18px;
+    background-color: rgb(0, 191, 255);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.left>button:hover{
+    /* background-color: rgb(2, 175, 232); */
+    box-shadow: #6e6e6e 0px 4px 15px;
+    transition: 0.5s;
+}
+
+.black_h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    color: rgb(64, 64, 64);
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.blue_h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 191, 255);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
