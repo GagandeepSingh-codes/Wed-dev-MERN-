@@ -48,7 +48,7 @@ a{
     color : #6e6e6e;
 }
 
-a:hover{
+.navbar> a:hover{
     color : rgb(1, 171, 227);
     font-weight: bold;
     transition: 0.5s;
