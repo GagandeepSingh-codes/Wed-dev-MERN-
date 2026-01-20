@@ -293,14 +293,8 @@ body{
     transition: border-color 0.3s ease;
 }
 
-.form-group :focus{
-    border-color: #e74c3c;
-    outline: none;
-},
-.form-group select:focus{
-    border-color: #e74c3c;
-    outline: none;
-},
+.form-group :focus,
+.form-group select:focus,
 .form-group textarea:focus{
     border-color: #e74c3c;
     outline: none;
