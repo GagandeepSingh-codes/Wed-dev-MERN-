@@ -64,6 +64,15 @@ a{
     display: flex;
     gap: 40px;
     padding : 0px 300px;
+    text-decoration: none;
+}
+
+.nav_links li a{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color : #6e6e6e;
+    font-family: 'Arial', sans-serif;  
 }
 
 .nav_links a:hover{
