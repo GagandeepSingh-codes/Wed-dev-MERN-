@@ -19,5 +19,20 @@ setTimeout(function(){
     console.log("SUCCESS WILL DEFINITELY COME TO YOU!");
 }, 4000);
 
-
 // This is called callback hell, when we have to do multiple asynchronous operations one after another, we end up with nested callbacks which can be hard to read and maintain. To avoid this, we can use Promises or async/await in JavaScript.
+
+// Example of callback hell:
+function fetchData(callback) {
+    setTimeout(function() {
+        callback("Data fetched");
+    }, 2000);
+}   
+fetchData(function(data) {
+    console.log(data);  
+    fetchData(function(data) {
+        console.log(data);  
+        fetchData(function(data) {
+            console.log(data);  
+        });
+    });
+});
