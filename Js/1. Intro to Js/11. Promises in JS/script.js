@@ -86,6 +86,7 @@ function handOverkeys(candies){
             const keys = "🔑";
             console.log("Here are your keys", keys);
             resolve(keys);
+            // reject(keys);
         },4000);
         
     })
@@ -102,18 +103,49 @@ function onBoarding(candies,keys){
     })
 }
 
-console.log(getCandies());
+// console.log(getCandies());
 
-setTimeout(() => {
-    console.log("I hope you like candies! v-v");
-}, 3000);
+// setTimeout(() => {
+//     console.log("I hope you like candies! v-v");
+// }, 3000);
 
-console.log(handOverkeys());
+// console.log(handOverkeys());
 
-setTimeout(()=>{
-    console.log("Enjoy your stay! v-v");
-},6000);
+// setTimeout(()=>{
+//     console.log("Enjoy your stay! v-v");
+// },6000);
 
-console.log(onBoarding());
+// console.log(onBoarding());
 
 
+// getCandies()
+// .then((candies)=>{
+//     console.log("I hope you like candies! v-v ", candies);
+//     return handOverkeys(candies);
+// }).then((keys)=>{
+//     console.log("Enjoy your stay! v-v ", keys);
+//     return onBoarding(keys);
+// }).then((HomelikeVilla)=>{
+//     console.log("I hope you like our home like villa", HomelikeVilla);  
+// }).catch((err)=>{
+//     console.log("Error occured :(",err);
+// }).finally(()=>{
+//     console.log("Happy to assist you :)");
+// })
+
+// Using async/await syntax to handle Promises
+async function bookHotelRoom(){
+    try{
+        const candies = await getCandies();
+    console.log("I hope you like candies! v-v ", candies);
+    const keys = await handOverkeys(candies);
+    console.log("Enjoy your stay! v-v ", keys);
+    const HomelikeVilla = await onBoarding(keys);
+    console.log("I hope you like our home like villa", HomelikeVilla);
+    }  
+    catch(err){
+        console.log("Error occured :(",err);
+    }
+}
+
+bookHotelRoom();
