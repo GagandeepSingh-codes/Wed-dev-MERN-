@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
+    <title>DOM Assignment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
+    <header>
+        <h1 id="greeting">Hello,</h1>
+    </header>
+
+    <div class="container">
+        <div class="box" id="red">red</div>
+        <div class="box" id="blue">blue</div>
+        <div class="box" id="green">green</div>
+        <div class="box" id="yellow">yellow</div>
+    </div>
+
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="greetUser()">Greet Me</button>
+
     <script src="script.js"></script>
 </body>
 </html>
